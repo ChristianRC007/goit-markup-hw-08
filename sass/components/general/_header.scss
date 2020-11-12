@@ -1,0 +1,7 @@
+.header {
+  border-bottom: 1px solid #ececec;
+
+  & > .container {
+    @include flexed(flex, space-between, center);
+  }
+}

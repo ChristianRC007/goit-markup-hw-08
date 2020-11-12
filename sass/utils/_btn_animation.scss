@@ -1,0 +1,11 @@
+@keyframes changeBtnStyle {
+  0% {
+    color: $mainWhiteColor;
+    background-color: $accentColor;
+  }
+
+  100% {
+    color: $standartBlack;
+    background-color: $mainWhiteColor;
+  }
+}
