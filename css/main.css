@@ -1,0 +1,235 @@
+body {
+  background-color: #ffffff;
+  color: #212121;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.icon {
+  fill: currentColor;
+}
+
+@-webkit-keyframes changeBtnStyle {
+  0% {
+    color: #ffffff;
+    background-color: #2196f3;
+  }
+  100% {
+    color: #000000;
+    background-color: #ffffff;
+  }
+}
+
+@keyframes changeBtnStyle {
+  0% {
+    color: #ffffff;
+    background-color: #2196f3;
+  }
+  100% {
+    color: #000000;
+    background-color: #ffffff;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.nav__list, .contacts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo, .logo--header, .logo--footer {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #2196f3;
+}
+
+.logo--header {
+  color: #000000;
+}
+
+.logo--footer {
+  color: #ffffff;
+}
+
+.header {
+  position: relative;
+  border-bottom: 1px solid #ececec;
+}
+
+.header > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button:hover,
+.menu-button:focus > .icon {
+  color: #2196f3;
+}
+
+.menu-button__cross {
+  display: none;
+}
+
+.menu-button.is-open .menu-button__cross {
+  display: block;
+}
+
+.menu-button.is-open .menu-button__burger {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-container {
+  background-color: #ffffff;
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 60px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-left: 84px;
+  }
+  .menu-container .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .nav__link {
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .contacts__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  .contacts__link > .icon {
+    margin-right: 8px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

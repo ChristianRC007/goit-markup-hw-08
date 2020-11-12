@@ -1,0 +1,14 @@
+.nav {
+  &__list {
+    @extend %list;
+  }
+  @media screen and (min-width: 768px) {
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    &__link {
+      text-decoration: none;
+    }
+  }
+}

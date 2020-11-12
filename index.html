@@ -15,10 +15,16 @@
     <!-- Верхняя линия -->
     <header class="header">
       <div class="container">
-        <nav class="nav">
-          <a class="logo" href="./index.html"
-            >Web<span class="logo--header">Studio</span>
-          </a>
+        <a class="logo" href="./index.html"
+        >Web<span class="logo--header">Studio</span></a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg class="icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="menu-button__cross" href="./images/sprite.svg#menu-cross"></use>
+            <use class="menu-button__burger" href="./images/sprite.svg#menu-burger"></use>
+          </svg>
+        </button>
+             <div class="menu-container" id="menu-container" data-menu>
+                <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link current" href="./index.html">Студия</a>
@@ -49,6 +55,7 @@
             </a>
           </li>
         </ul>
+       </div>
       </div>
     </header>
     <main>
@@ -519,5 +526,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

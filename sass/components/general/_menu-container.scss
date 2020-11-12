@@ -1,0 +1,27 @@
+.menu-container {
+  background-color: $mainWhiteColor;
+
+  &.is-open {
+    display: block;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+
+    padding: 60px 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include flexed(flex, space-between, center);
+    flex-grow: 1;
+    margin-left: 84px;
+    .nav__list {
+      display: flex;
+    }
+  }
+}
