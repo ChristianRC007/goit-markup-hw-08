@@ -1,11 +1,18 @@
 .contacts {
   @extend %list;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
   &__item:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 16px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
     }
   }
 
@@ -22,15 +29,28 @@
     transition: color 250ms $timingFunction;
     text-decoration: none;
 
+    & > .icon {
+      margin-right: 8px;
+    }
+
     @media screen and (max-width: 767px) {
       display: inline-flex;
 
       font-size: 18px;
       line-height: 1.16;
-    }
 
-    & > .icon {
-      margin-right: 8px;
+      & > .icon {
+        margin-right: 10px;
+      }
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.16;
+    }
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accentColor;
   }
 }
