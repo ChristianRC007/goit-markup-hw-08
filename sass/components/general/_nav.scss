@@ -1,14 +1,37 @@
 .nav {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
   &__list {
     @extend %list;
   }
-  @media screen and (min-width: 768px) {
-    &__item:not(:last-child) {
-      margin-right: 50px;
+  &__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
     }
 
-    &__link {
-      text-decoration: none;
+    @media screen and (min-width: 768px) {
+      margin-right: 50px;
+    }
+  }
+  &__link {
+    display: block;
+    position: relative;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: $mainTextColor;
+    transition: color 250ms $timingFunction;
+
+    @media screen and (max-width: 767px) {
+      display: inline-block;
+
+      font-size: 18px;
+      line-height: 1.16;
     }
   }
 }
