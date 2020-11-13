@@ -1,0 +1,102 @@
+.clients {
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+
+      font-size: 36px;
+      line-height: 1.16;
+    }
+  }
+
+  &__list {
+    @extend %list;
+    @media screen and (max-width: 479px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-top: -30px;
+      margin-left: -30px;
+    }
+  }
+
+  &__item {
+    @media screen and (max-width: 479px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-top: 30px;
+      margin-left: 30px;
+      flex-basis: calc(100% / 3 - 30px);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 6 - 30px);
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    width: 210px;
+    height: 90px;
+
+    border: 1px solid $socialIconColor;
+    border-radius: 4px;
+    transition: border 250ms $timingFunction;
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
+  }
+  &__link > .icon {
+    color: $socialIconColor;
+    transform: scale(1);
+    transition: color 250ms $timingFunction, transform 250ms $timingFunction;
+  }
+
+  &__link:hover {
+    border: 1px solid $accentColor;
+  }
+
+  &__link:hover > .icon {
+    color: $accentColor;
+    transform: scale(1.2);
+  }
+}
