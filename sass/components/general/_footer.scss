@@ -1,0 +1,22 @@
+.footer {
+  background-color: $mainBgColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  & > .container {
+    @media screen and (min-width: 1199px) {
+      @include flexed(flex, space-between, baseline);
+    }
+  }
+
+  &__wrapper {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      @include flexed(flex, space-between, baseline);
+      padding: 0 71px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include flexed(flex, unset, baseline);
+    }
+  }
+}

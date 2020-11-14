@@ -1,0 +1,45 @@
+.contacts-box {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    @include flexed(flex, unset, center);
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+  .logo {
+    @media screen and (max-width: 1199px) {
+      display: inline-block;
+    }
+  }
+
+  &__address {
+    display: block;
+
+    margin-top: 20px;
+    margin-bottom: 9px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: $mainWhiteColor;
+    text-decoration: none;
+  }
+
+  &__link {
+    display: block;
+
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+
+    & + & {
+      margin-top: 9px;
+    }
+  }
+}

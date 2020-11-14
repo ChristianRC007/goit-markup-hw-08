@@ -1,0 +1,42 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  height: 586px;
+  width: 528px;
+  background-color: $mainWhiteColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms $timingFunction;
+
+  &__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 30px;
+    height: 30px;
+
+    padding: 7px 9px;
+    background-color: $mainWhiteColor;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: color 250ms $timingFunction;
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+      cursor: pointer;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px;
+  }
+}
