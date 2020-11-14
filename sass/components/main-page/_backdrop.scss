@@ -11,10 +11,12 @@
   opacity: 1;
   transition: opacity 250ms $timingFunction;
 
+  overflow-y: scroll;
+
   @media screen and (min-width: 480px) {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
