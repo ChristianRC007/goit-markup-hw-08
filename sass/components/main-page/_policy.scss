@@ -1,0 +1,54 @@
+.policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  &__input {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    &:checked + .policy__checkbox {
+      background-color: $accentColor;
+      background-image: url(../images/check.svg);
+      background-origin: border-box;
+      background-size: cover;
+      background-position: center;
+      border: 2px solid transparent;
+    }
+  }
+
+  &__text {
+    margin-left: 8px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    color: $secondaryTextColor;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  }
+
+  &__link {
+    color: $accentColor;
+  }
+
+  &__checkbox {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $mainTextColor;
+    border-radius: 2px;
+  }
+}
