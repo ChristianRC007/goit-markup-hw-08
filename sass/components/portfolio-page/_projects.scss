@@ -17,11 +17,6 @@
   &__item {
     max-width: 450px;
     height: auto;
-    /*   width: 370px;
-    height: 404px;
-    margin-top: 30px;
-    margin-left: 30px;
-    flex-basis: calc(100% / 3 - 30px); */
 
     border: 1px solid #eeeeee;
     transition: box-shadow 250ms $timingFunction;
@@ -33,7 +28,6 @@
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       max-width: 354px;
-
       margin-top: 30px;
       margin-left: 30px;
       flex-basis: calc(100% / 2 - 30px);
@@ -59,12 +53,7 @@
 
   &__thumb {
     position: relative;
-
     overflow: hidden;
-
-    & > img {
-      width: 100%;
-    }
   }
 
   &__thumb-overlay {
@@ -76,12 +65,10 @@
     z-index: 1;
 
     height: 100%;
-
     padding-left: 24px;
     padding-right: 24px;
 
     background-color: rgba(33, 150, 243, 0.9);
-
     transform: translateY(101%);
     transition: transform 250ms $timingFunction;
   }
@@ -110,6 +97,7 @@
 
   &__name {
     margin: 0;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;

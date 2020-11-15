@@ -16,7 +16,7 @@
     <!-- Верхняя линия -->
    <header class="header">
       <div class="container">
-        <a class="logo" href="./index.html"
+        <a class="logo" href="./index.html" rel="noopener noreferrer" aria-label="Логотип компании"
         >Web<span class="logo--header">Studio</span></a>
         <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
           <svg class="icon" width="40" height="40" aria-label="Переключатель мобильного меню">
@@ -28,10 +28,10 @@
                 <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="./index.html">Студия</a>
+              <a class="nav__link" href="./index.html" rel="noopener noreferrer">Студия</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link current" href="./portfolio.html">Портфолио</a>
+              <a class="nav__link current" href="./portfolio.html" rel="noopener noreferrer">Портфолио</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="">Контакты</a>
@@ -40,7 +40,7 @@
         </nav>
         <ul class="contacts">
           <li class="contacts__item">
-            <a class="contacts__link" href="mailto:info@devstudio.com"
+            <a class="contacts__link" href="mailto:info@devstudio.com" rel="noopener noreferrer"
               ><svg class="icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-mail"></use>
               </svg>
@@ -48,7 +48,7 @@
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111">
+            <a class="contacts__link" href="tel:+380961111111" rel="noopener noreferrer" >
               <svg class="icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-phone"></use>
               </svg>
@@ -82,9 +82,20 @@
           </ul>
           <ul class="projects">
             <li class="projects__item">
-             <a class="projects__link" href="">
+             <a class="projects__link" href="#" rel="noopener noreferrer">
                 <div class="projects__thumb">
-                <img src="./images/photo1.jpg" alt="Компьютер" />
+                 <picture>
+                   <source srcset="./images/webp/photo1-370.webp 1x, ./images/webp/photo1-370@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                   <source srcset="./images/photo1-370.jpg 1x, ./images/photo1-370@2x.jpg 2x"  media="(min-width: 1200px)">
+                   <source srcset="./images/webp/photo1-354.webp 1x, ./images/webp/photo1-354@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                   <source srcset="./images/photo1-354.jpg 1x, ./images/photo1-354@2x.jpg 2x"  media="(min-width: 768px)">
+                   <source srcset="./images/webp/photo1-450.webp 1x, ./images/webp/photo1-450@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                   <source srcset="./images/photo1-450.jpg 1x, ./images/photo1-450@2x.jpg 2x"  media="(min-width: 320px)">
+                   <img
+                   src="./images/photo1-370.jpg"
+                   alt="Компьютер"
+                   />
+                </picture>
                 <div class="projects__thumb-overlay">
                   <p class="projects__thumb-text">
                     Технокряк это современная площадка распространения
@@ -100,9 +111,20 @@
              </a>
             </li>
             <li class="projects__item">
-          <a class="projects__link" href="">
+          <a class="projects__link" href="#" rel="noopener noreferrer">
                 <div class="projects__thumb">
-                <img src="./images/photo2.jpg" alt="Баскетболисты" />
+                  <picture>
+                   <source srcset="./images/webp/photo2-370.webp 1x, ./images/webp/photo2-370@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                   <source srcset="./images/photo2-370.jpg 1x, ./images/photo2-370@2x.jpg 2x"  media="(min-width: 1200px)">
+                   <source srcset="./images/webp/photo2-354.webp 1x, ./images/webp/photo2-354@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                   <source srcset="./images/photo2-354.jpg 1x, ./images/photo2-354@2x.jpg 2x"  media="(min-width: 768px)">
+                   <source srcset="./images/webp/photo2-450.webp 1x, ./images/webp/photo2-450@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                   <source srcset="./images/photo2-450.jpg 1x, ./images/photo2-450@2x.jpg 2x"  media="(min-width: 320px)">
+                   <img
+                   src="./images/photo2-370.jpg"
+                   alt="Баскетболисты"
+                   />
+                </picture>
                 <div class="projects__thumb-overlay">
                   <p class="projects__thumb-text">
                     Технокряк это современная площадка распространения
@@ -118,9 +140,20 @@
           </a>
             </li>
             <li class="projects__item">
-              <a class="projects__link" href="">
+              <a class="projects__link" href="#" rel="noopener noreferrer">
                 <div class="projects__thumb">
-                <img src="./images/photo3.jpg" alt="Логотип ресторана" />
+                      <picture>
+                   <source srcset="./images/webp/photo3-370.webp 1x, ./images/webp/photo3-370@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                   <source srcset="./images/photo3-370.jpg 1x, ./images/photo3-370@2x.jpg 2x"  media="(min-width: 1200px)">
+                   <source srcset="./images/webp/photo3-354.webp 1x, ./images/webp/photo3-354@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                   <source srcset="./images/photo3-354.jpg 1x, ./images/photo3-354@2x.jpg 2x"  media="(min-width: 768px)">
+                   <source srcset="./images/webp/photo3-450.webp 1x, ./images/webp/photo3-450@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                   <source srcset="./images/photo3-450.jpg 1x, ./images/photo3-450@2x.jpg 2x"  media="(min-width: 320px)">
+                   <img
+                   src="./images/photo3-370.jpg"
+                   alt="Логотип ресторана"
+                   />
+                </picture>
                 <div class="projects__thumb-overlay">
                   <p class="projects__thumb-text">
                     Технокряк это современная площадка распространения
@@ -136,9 +169,20 @@
               </a>
             </li>
             <li class="projects__item">
-             <a class="projects__link" href="">
+             <a class="projects__link" href="#" rel="noopener noreferrer">
                 <div class="projects__thumb">
-                <img src="./images/photo4.jpg" alt="Наушники" />
+                      <picture>
+                   <source srcset="./images/webp/photo4-370.webp 1x, ./images/webp/photo4-370@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                   <source srcset="./images/photo4-370.jpg 1x, ./images/photo4-370@2x.jpg 2x"  media="(min-width: 1200px)">
+                   <source srcset="./images/webp/photo4-354.webp 1x, ./images/webp/photo4-354@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                   <source srcset="./images/photo4-354.jpg 1x, ./images/photo4-354@2x.jpg 2x"  media="(min-width: 768px)">
+                   <source srcset="./images/webp/photo4-450.webp 1x, ./images/webp/photo4-450@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                   <source srcset="./images/photo4-450.jpg 1x, ./images/photo4-450@2x.jpg 2x"  media="(min-width: 320px)">
+                   <img
+                   src="./images/photo4-370.jpg"
+                   alt="Наушники"
+                   />
+                </picture>
                 <div class="projects__thumb-overlay">
                   <p class="projects__thumb-text">
                     Технокряк это современная площадка распространения
@@ -154,9 +198,20 @@
              </a>
             </li>
             <li class="projects__item">
-             <a class="projects__link" href="">
+             <a class="projects__link" href="#" rel="noopener noreferrer">
                  <div class="projects__thumb">
-                <img src="./images/photo5.jpg" alt="Две коробки" />
+                      <picture>
+                   <source srcset="./images/webp/photo5-370.webp 1x, ./images/webp/photo5-370@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                   <source srcset="./images/photo5-370.jpg 1x, ./images/photo5-370@2x.jpg 2x"  media="(min-width: 1200px)">
+                   <source srcset="./images/webp/photo5-354.webp 1x, ./images/webp/photo5-354@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                   <source srcset="./images/photo5-354.jpg 1x, ./images/photo5-354@2x.jpg 2x"  media="(min-width: 768px)">
+                   <source srcset="./images/webp/photo5-450.webp 1x, ./images/webp/photo5-450@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                   <source srcset="./images/photo5-450.jpg 1x, ./images/photo5-450@2x.jpg 2x"  media="(min-width: 320px)">
+                   <img
+                   src="./images/photo5-370.jpg"
+                   alt="Две коробки"
+                   />
+                </picture>
                 <div class="projects__thumb-overlay">
                   <p class="projects__thumb-text">
                     Технокряк это современная площадка распространения
@@ -172,9 +227,20 @@
              </a>
             </li>
             <li class="projects__item">
-              <a class="projects__link" href="">
+              <a class="projects__link" href="#" rel="noopener noreferrer">
                  <div class="projects__thumb">
-                <img src="./images/photo6.jpg" alt="Монитор" />
+                      <picture>
+                   <source srcset="./images/webp/photo6-370.webp 1x, ./images/webp/photo6-370@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                   <source srcset="./images/photo6-370.jpg 1x, ./images/photo6-370@2x.jpg 2x"  media="(min-width: 1200px)">
+                   <source srcset="./images/webp/photo6-354.webp 1x, ./images/webp/photo6-354@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                   <source srcset="./images/photo6-354.jpg 1x, ./images/photo6-354@2x.jpg 2x"  media="(min-width: 768px)">
+                   <source srcset="./images/webp/photo6-450.webp 1x, ./images/webp/photo6-450@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                   <source srcset="./images/photo6-450.jpg 1x, ./images/photo6-450@2x.jpg 2x"  media="(min-width: 320px)">
+                   <img
+                   src="./images/photo6-370.jpg"
+                   alt="Монитор"
+                   />
+                </picture>
                 <div class="projects__thumb-overlay">
                   <p class="projects__thumb-text">
                     Технокряк это современная площадка распространения
@@ -190,9 +256,20 @@
               </a>
             </li>
             <li class="projects__item">
-             <a class="projects__link" href="">
+             <a class="projects__link" href="#" rel="noopener noreferrer">
                 <div class="projects__thumb">
-                <img src="./images/photo7.jpg" alt="Журнал" />
+                      <picture>
+                   <source srcset="./images/webp/photo7-370.webp 1x, ./images/webp/photo7-370@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                   <source srcset="./images/photo7-370.jpg 1x, ./images/photo7-370@2x.jpg 2x"  media="(min-width: 1200px)">
+                   <source srcset="./images/webp/photo7-354.webp 1x, ./images/webp/photo7-354@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                   <source srcset="./images/photo7-354.jpg 1x, ./images/photo7-354@2x.jpg 2x"  media="(min-width: 768px)">
+                   <source srcset="./images/webp/photo7-450.webp 1x, ./images/webp/photo7-450@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                   <source srcset="./images/photo7-450.jpg 1x, ./images/photo7-450@2x.jpg 2x"  media="(min-width: 320px)">
+                   <img
+                   src="./images/photo7-370.jpg"
+                   alt="Журнал"
+                   />
+                </picture>
                 <div class="projects__thumb-overlay">
                   <p class="projects__thumb-text">
                     Технокряк это современная площадка распространения
@@ -208,9 +285,20 @@
              </a>
             </li>
             <li class="projects__item">
-              <a class="projects__link" href="">
+              <a class="projects__link" href="#" rel="noopener noreferrer">
                 <div class="projects__thumb">
-                <img src="./images/photo8.jpg" alt="Бирка" />
+                      <picture>
+                   <source srcset="./images/webp/photo8-370.webp 1x, ./images/webp/photo8-370@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                   <source srcset="./images/photo8-370.jpg 1x, ./images/photo8-370@2x.jpg 2x"  media="(min-width: 1200px)">
+                   <source srcset="./images/webp/photo8-354.webp 1x, ./images/webp/photo8-354@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                   <source srcset="./images/photo8-354.jpg 1x, ./images/photo8-354@2x.jpg 2x"  media="(min-width: 768px)">
+                   <source srcset="./images/webp/photo8-450.webp 1x, ./images/webp/photo8-450@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                   <source srcset="./images/photo8-450.jpg 1x, ./images/photo8-450@2x.jpg 2x"  media="(min-width: 320px)">
+                   <img
+                   src="./images/photo8-370.jpg"
+                   alt="Бирка"
+                   />
+                </picture>
                 <div class="projects__thumb-overlay">
                   <p class="projects__thumb-text">
                     Технокряк это современная площадка распространения
@@ -226,9 +314,20 @@
               </a>
             </li>
             <li class="projects__item">
-              <a class="projects__link" href="">
+              <a class="projects__link" href="#" rel="noopener noreferrer">
                 <div class="projects__thumb">
-                <img src="./images/photo9.jpg" alt="Работа за ноутбуком" />
+                      <picture>
+                   <source srcset="./images/webp/photo9-370.webp 1x, ./images/webp/photo9-370@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                   <source srcset="./images/photo9-370.jpg 1x, ./images/photo9-370@2x.jpg 2x"  media="(min-width: 1200px)">
+                   <source srcset="./images/webp/photo9-354.webp 1x, ./images/webp/photo9-354@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                   <source srcset="./images/photo9-354.jpg 1x, ./images/photo9-354@2x.jpg 2x"  media="(min-width: 768px)">
+                   <source srcset="./images/webp/photo9-450.webp 1x, ./images/webp/photo9-450@2x.webp 2x" type="image/webp" media="(min-width: 320px)">
+                   <source srcset="./images/photo9-450.jpg 1x, ./images/photo9-450@2x.jpg 2x"  media="(min-width: 320px)">
+                   <img
+                   src="./images/photo9-370.jpg"
+                   alt="Работа за ноутбуком"
+                   />
+                </picture>
                 <div class="projects__thumb-overlay">
                   <p class="projects__thumb-text">
                     Технокряк это современная площадка распространения
@@ -248,18 +347,18 @@
       </section>
     </main>
     <!-- Подвал -->
-    <footer class="footer">
+ <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <div class="contacts-box">
-          <a class="logo" href="./index.html"
+          <a class="logo" href="./index.html" rel="noopener noreferrer" aria-label="Логотип компании"
             >Web<span class="logo--footer">Studio</span>
           </a>
-          <a href="https://goo.gl/maps/JCMvUqQt4Z2m48do7" class="contacts-box__address">г. Киев, пр-т Леси Украинки, 26</a href="https://goo.gl/maps/JCMvUqQt4Z2m48do7">
-          <a class="contacts-box__link" href="mailto:info@devstudio.com"
+          <a href="https://goo.gl/maps/JCMvUqQt4Z2m48do7" class="contacts-box__address" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a href="https://goo.gl/maps/JCMvUqQt4Z2m48do7">
+          <a class="contacts-box__link" href="mailto:info@devstudio.com" rel="noopener noreferrer"
             >info@devstudio.com
           </a>
-          <a class="contacts-box__link" href="tel:+380961111111"
+          <a class="contacts-box__link" href="tel:+380961111111" rel="noopener noreferrer"
             >+38 096 111 11 11</a
           >
         </div>
@@ -267,28 +366,28 @@
           <h2 class="social-box__title">присоединяйтесь</h2>
           <ul class="social__list">
             <li class="social__item--footer">
-              <a class="social__link--footer" target="_blank" href="#"
+              <a class="social__link--footer" target="_blank" href="#" rel="noopener noreferrer" aria-label="Инстаграм"
                 ><svg class="icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item--footer">
-              <a class="social__link--footer" target="_blank" href="#"
+              <a class="social__link--footer" target="_blank" href="#" rel="noopener noreferrer" aria-label="Твиттер"
                 ><svg class="icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item--footer">
-              <a class="social__link--footer" target="_blank" href="#">
+              <a class="social__link--footer" target="_blank" href="#" rel="noopener noreferrer" aria-label="Фейсбук">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link--footer" target="_blank" href="#">
+              <a class="social__link--footer" target="_blank" href="#" rel="noopener noreferrer" aria-label="Линкд Ин">
                 <svg class="icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
@@ -306,6 +405,7 @@
               id="subscribe"
               name="subscribe"
               placeholder="E-mail"
+              aria-label="Введите адрес электронной почты"
             />
             <button class="subscribe-box__btn" type="submit">
               Подписаться
