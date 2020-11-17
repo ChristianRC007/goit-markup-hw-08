@@ -65,23 +65,23 @@
           <h1 class="portfolio__title visually-hidden">Логический заголовок</h1>
           <ul class="filter">
             <li class="filter__item">
-              <button class="filter__btn" type="button">Все</button>
+              <button class="filter__btn" type="button" onclick="filterSelection('all')">Все</button>
             </li>
             <li class="filter__item">
-              <button class="filter__btn" type="button">Веб-сайты</button>
+              <button class="filter__btn" type="button" onclick="filterSelection('web')">Веб-сайты</button>
             </li>
             <li class="filter__item">
-              <button class="filter__btn" type="button">Приложения</button>
+              <button class="filter__btn" type="button" onclick="filterSelection('apps')">Приложения</button>
             </li>
             <li class="filter__item">
-              <button class="filter__btn" type="button">Дизайн</button>
+              <button class="filter__btn" type="button" onclick="filterSelection('design')">Дизайн</button>
             </li>
             <li class="filter__item">
-              <button class="filter__btn" type="button">Маркетинг</button>
+              <button class="filter__btn" type="button" onclick="filterSelection('marketing')">Маркетинг</button>
             </li>
           </ul>
           <ul class="projects">
-            <li class="projects__item">
+            <li class="projects__item filter__element web">
              <a class="projects__link" href="#" rel="noopener noreferrer">
                 <div class="projects__thumb">
                  <picture>
@@ -110,7 +110,7 @@
               </div>
              </a>
             </li>
-            <li class="projects__item">
+            <li class="projects__item  filter__element design">
           <a class="projects__link" href="#" rel="noopener noreferrer">
                 <div class="projects__thumb">
                   <picture>
@@ -139,7 +139,7 @@
               </div>
           </a>
             </li>
-            <li class="projects__item">
+            <li class="projects__item  filter__element apps">
               <a class="projects__link" href="#" rel="noopener noreferrer">
                 <div class="projects__thumb">
                       <picture>
@@ -168,7 +168,7 @@
               </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="projects__item  filter__element marketing">
              <a class="projects__link" href="#" rel="noopener noreferrer">
                 <div class="projects__thumb">
                       <picture>
@@ -197,7 +197,7 @@
               </div>
              </a>
             </li>
-            <li class="projects__item">
+            <li class="projects__item  filter__element apps">
              <a class="projects__link" href="#" rel="noopener noreferrer">
                  <div class="projects__thumb">
                       <picture>
@@ -226,7 +226,7 @@
               </div>
              </a>
             </li>
-            <li class="projects__item">
+            <li class="projects__item  filter__element web">
               <a class="projects__link" href="#" rel="noopener noreferrer">
                  <div class="projects__thumb">
                       <picture>
@@ -255,7 +255,7 @@
               </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="projects__item  filter__element design">
              <a class="projects__link" href="#" rel="noopener noreferrer">
                 <div class="projects__thumb">
                       <picture>
@@ -284,7 +284,7 @@
               </div>
              </a>
             </li>
-            <li class="projects__item">
+            <li class="projects__item  filter__element marketing">
               <a class="projects__link" href="#" rel="noopener noreferrer">
                 <div class="projects__thumb">
                       <picture>
@@ -313,7 +313,7 @@
               </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="projects__item  filter__element apps">
               <a class="projects__link" href="#" rel="noopener noreferrer">
                 <div class="projects__thumb">
                       <picture>
@@ -418,5 +418,6 @@
       </div>
     </footer>
      <script src="./js/menu.js"></script>
+     <script src="./js/filter.js"></script>
   </body>
 </html>

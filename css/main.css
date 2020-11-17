@@ -1588,4 +1588,12 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+.filter__element {
+  display: none;
+}
+
+.show {
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */

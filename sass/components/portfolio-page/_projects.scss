@@ -105,3 +105,10 @@
     color: $secondaryTextColor;
   }
 }
+
+.filter__element {
+  display: none;
+}
+.show {
+  display: block;
+}
