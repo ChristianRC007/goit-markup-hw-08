@@ -88,12 +88,17 @@
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition: border 250ms $timingFunction;
 
-    &:focus-within {
+    &:hover {
+      border: 1px solid rgba(33, 33, 33, 0.4);
+    }
+
+    &:focus {
       outline-color: $accentColor;
     }
 
-    &:focus-within + .modal__input-icon {
+    &:focus + .modal__input-icon {
       fill: $accentColor;
     }
   }
