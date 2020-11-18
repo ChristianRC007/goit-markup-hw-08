@@ -46,9 +46,7 @@
   }
 
   &__link {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    @include flexed(inline-flex, center, center);
 
     width: 100%;
     height: 90px;
