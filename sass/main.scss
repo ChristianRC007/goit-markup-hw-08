@@ -1,4 +1,6 @@
 @import './utils/variables';
+@import './utils/normalize';
+@import './utils/fonts';
 @import './utils/body';
 @import './utils/img';
 @import './utils/container';
@@ -6,7 +8,6 @@
 @import './utils/mixins';
 @import './utils/visually-hidden';
 @import './utils/placeholders';
-@import './utils/normalize';
 @import './components/general/logo';
 @import './components/general/header';
 @import './components/general/menu-container';
